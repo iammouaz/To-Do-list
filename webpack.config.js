@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
 module.exports = {
   mode: 'development',
   entry: {
@@ -11,13 +10,14 @@ module.exports = {
   devServer: {
     static: './dist',
   },
+  // eslint-disable-next-line no-dupe-keys
   devServer: {
     static: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'To Do List',
-     template: './src/index.html'
+      template: './src/index.html',
     }),
   ],
   output: {
