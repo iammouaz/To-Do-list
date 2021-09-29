@@ -58,3 +58,37 @@ const addLi = (ul, index, completed, description) => {
   task.append(cBox, label, elBtn);
   ul.prepend(task);
 };
+
+const refresh = (ul) => {
+  while (ul.hasChildNodes()) ul.removeChild(ul.firstChild);
+  for (let i = 0; i < myList.length; i += 1) myList[i].index = i;
+  myList.forEach((task) => {
+    addLi(ul, task.index, task.completed, task.description);
+  });
+  saveStorage();
+};
+
+const Delete = (ul, index) => {
+  myList = myList.filter((e) => e.index !== parseInt(index, 10));
+  refresh(ul);
+};
+
+const removeCompleted = (ul) => {
+  myList = myList.filter((e) => e.completed !== true);
+  refresh(ul);
+};
+
+const getFromLocal = (ul) => {
+  myList = JSON.parse(localStorage.tasks);
+  myList.forEach((task) => {
+    addLi(ul, task.index, task.completed, task.description);
+  });
+};
+
+const addElement = (ul, completed, description) => {
+  myList.push(new Task(myList.length, completed, description));
+  addLi(ul, myList.length - 1, completed, description);
+  saveStorage();
+};
+
+export { getFromLocal, addElement, removeCompleted };
