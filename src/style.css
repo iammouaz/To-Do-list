@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  padding: 0;
+  list-style-type: none;
+  width: 234px;
+}
+
+.list-item {
+  border: 1px solid;
+  height: 41px;
+}
+
+.Add-list {
+  width: 86%;
+  padding: 15px;
+  margin-bottom: -16px;
+}
