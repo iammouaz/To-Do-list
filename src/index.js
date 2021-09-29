@@ -1,33 +1,55 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import '@fortawesome/fontawesome-free/js/fontawesome.js';
+import '@fortawesome/fontawesome-free/js/solid.js';
 import './style.css';
+import * as Functions from './Functions.js';
 
-const jobs = [
-  { title: 'Go out for Walk', finished: true, index: 1 },
-  { title: 'Do my Homework', finished: false, index: 0 },
-  { title: 'Make Dinner', finished: true, index: 2 },
-];
+const boxList = document.getElementById('box-list');
+const ul = document.createElement('ul');
+ul.classList.add('item-list');
 
-const addList = (desc, completed, index) => {
-  const MakeList = document.createElement('li');
-  MakeList.classList.add('npx eslint . ');
-  const Input = document.createElement('input');
-  Input.classList.add('jobs');
-  Input.setAttribute('type', 'checkbox');
-  Input.checked = completed;
-  MakeList.textContent = desc;
-  MakeList.prepend(Input);
-  const Div = document.createElement('div');
-  Div.classList.add('test');
-  MakeList.append(Div);
-  MakeList.id = index;
-  return MakeList;
+const createBox = () => {
+  const top = document.createElement('div');
+  const title = document.createElement('h2');
+  title.classList.add('title');
+  top.classList.add('top');
+  title.innerHTML = "Today's To Do";
+  top.append(title);
+  boxList.appendChild(top);
+  const form = document.createElement('form');
+  const input = document.createElement('input');
+  const arrow = document.createElement('i');
+  input.type = 'text';
+  input.placeholder = 'Add to your list';
+  input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (input.value !== '') {
+        Functions.addElement(ul, false, input.value);
+        input.value = '';
+      }
+    }
+  });
+  arrow.classList.add('fas', 'fa-level-down-alt');
+  form.append(input, arrow);
+  boxList.append(form, ul);
+  const bottom = document.createElement('div');
+  bottom.classList.add('bottom');
+  const clearBtn = document.createElement('button');
+  clearBtn.classList.add('clear-btn');
+  clearBtn.innerText = 'Clear all completed';
+  clearBtn.addEventListener('click', () => {
+    Functions.removeCompleted(ul);
+  }, false);
+  bottom.appendChild(clearBtn);
+  boxList.appendChild(bottom);
 };
 
-const AddToPage = (arr) => {
-  const UlItems = document.getElementById('list');
-  for (let i = 0; i < arr.length; i += 1) {
-    arr.sort((a, b) => ((a.index > b.index) ? 1 : -1));
-    UlItems.appendChild(addList(arr[i].title, arr[i].finished, arr[i].index));
+window.onload = () => {
+  createBox();
+  if (localStorage.getItem('tasks') === null) {
+    localStorage.setItem('tasks', JSON.stringify([]));
+  } else {
+    Functions.getFromLocal(ul);
   }
 };
-
-AddToPage(jobs);
