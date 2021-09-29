@@ -2,6 +2,7 @@
 import '@fortawesome/fontawesome-free/js/fontawesome.js';
 import '@fortawesome/fontawesome-free/js/solid.js';
 import './style.css';
+import * as Functions from './Functions.js';
 
 const boxList = document.getElementById('box-list');
 const ul = document.createElement('ul');
@@ -42,4 +43,13 @@ const createBox = () => {
   }, false);
   bottom.appendChild(clearBtn);
   boxList.appendChild(bottom);
+};
+
+window.onload = () => {
+  createBox();
+  if (localStorage.getItem('tasks') === null) {
+    localStorage.setItem('tasks', JSON.stringify([]));
+  } else {
+    Functions.getFromLocal(ul);
+  }
 };
