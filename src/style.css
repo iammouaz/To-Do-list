@@ -8,13 +8,12 @@ body {
 }
 
 .title {
-    color: #545862;
-    font-weight: 800;
-    padding: 1rem;
-    line-height: 20px;
-    margin: 0;
+  color: #545862;
+  font-weight: 800;
+  padding: 1rem;
+  line-height: 20px;
+  margin: 0;
 }
-
 
 .top {
   display: flex;
