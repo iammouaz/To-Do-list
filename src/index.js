@@ -1,4 +1,5 @@
 import './style.css';
+// import {} from './completed.js';
 
 const jobs = [
   { title: 'Go out for Walk', finished: true, index: 1 },
