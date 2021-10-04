@@ -4,6 +4,15 @@
 
 > This project consist in making a To Do task list using webpack.
 
+
+## Preview
+
+![image](preview.png)
+S
+## Live Demo
+
+[Live Demo Link](https://iammouaz.github.io/To-Do-list/dist/index.html)
+
 ## Built With
 
 - HTML & CSS
