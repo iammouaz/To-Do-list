@@ -33,11 +33,6 @@ body {
   color: #333;
 }
 
-.fa-level-down-alt {
-  font-size: 10px;
-  transform: rotate(90deg);
-}
-
 .fa-trash {
   display: none;
 }
@@ -49,6 +44,11 @@ body {
   width: 20px;
   cursor: pointer;
   pointer-events: none;
+}
+
+.fa-level-down-alt {
+  font-size: 10px;
+  transform: rotate(90deg);
 }
 
 #box-list {
