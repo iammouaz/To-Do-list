@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://iammouaz.github.io/To-Do-list/dist/index.html)
+[Live Demo Link](https://iammouaz.github.io/To-Do-list)
 
 ## Built With
 
