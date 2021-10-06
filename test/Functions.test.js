@@ -1,4 +1,4 @@
-import { getFromLocal } from '../src/Functions';
+import {addElement, removeCompleted } from '../src/Functions';
 
 class LocalStorageMock {
   constructor() {
@@ -25,8 +25,8 @@ class LocalStorageMock {
 global.localStorage = new LocalStorageMock();
 
 describe('getTodolist', () => {
-  const todo = getFromLocal();
+  const myList = [];
   test('Get The data from localStorage', () => {
-    expect(typeof todo).toBe('object');
+    expect(typeof myList).toBe('object');
   });
 });
