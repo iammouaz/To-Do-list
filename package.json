@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage",
     "build": "webpack",
     "start": "webpack serve --open"
   },
@@ -15,6 +15,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -26,6 +27,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.2.4",
     "style-loader": "^3.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
