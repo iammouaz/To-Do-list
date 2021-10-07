@@ -1,32 +1,24 @@
-import {addElement, removeCompleted } from '../src/Functions';
+/**
+ * @jest-environment jsdom
+ */
+import { addElement } from '../src/Functions';
 
-class LocalStorageMock {
-  constructor() {
-    this.store = {};
-  }
+const arr = [];
+describe(addElement, () => {
+  // Act
+  const result = addElement('first task', true);
+  test('Returns a true values ', () => {
+    // Assert
+    expect(typeof result).not.toEqual({ description: 'first task', completed: false });
+  });
 
-  clear() {
-    this.store = {};
-  }
+  test('Correct creation of the index atribute', () => {
+    addElement('Secondtodo', arr);
+    expect(arr.length).toBe(0);
+  });
 
-  getItem(key) {
-    return this.store[key] || null;
-  }
-
-  setItem(key, value) {
-    this.store[key] = String(value);
-  }
-
-  removeItem(key) {
-    delete this.store[key];
-  }
-}
-
-global.localStorage = new LocalStorageMock();
-
-describe('getTodolist', () => {
-  const myList = [];
-  test('Get The data from localStorage', () => {
-    expect(typeof myList).toBe('object');
+  test('Returns an object', () => {
+    addElement('thirdtodo', arr);
+    expect(typeof arr).toEqual('object');
   });
 });

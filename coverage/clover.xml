@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1633553782538" clover="3.2.0">
-  <project timestamp="1633553782538" name="All files">
-    <metrics statements="61" coveredstatements="9" conditionals="3" coveredconditionals="0" methods="17" coveredmethods="0" elements="81" coveredelements="9" complexity="0" loc="61" ncloc="61" packages="1" files="1" classes="1"/>
+<coverage generated="1633622827832" clover="3.2.0">
+  <project timestamp="1633622827833" name="All files">
+    <metrics statements="60" coveredstatements="35" conditionals="3" coveredconditionals="0" methods="17" coveredmethods="4" elements="80" coveredelements="39" complexity="0" loc="60" ncloc="60" packages="1" files="1" classes="1"/>
     <file name="Functions.js" path="C:\Users\LENOVO\Documents\GitHub\iammouaz\To-Do-list\src\Functions.js">
-      <metrics statements="61" coveredstatements="9" conditionals="3" coveredconditionals="0" methods="17" coveredmethods="0"/>
-      <line num="3" count="0" type="stmt"/>
-      <line num="4" count="0" type="stmt"/>
-      <line num="5" count="0" type="stmt"/>
+      <metrics statements="60" coveredstatements="35" conditionals="3" coveredconditionals="0" methods="17" coveredmethods="4"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
       <line num="9" count="1" type="stmt"/>
       <line num="13" count="1" type="stmt"/>
       <line num="15" count="1" type="stmt"/>
-      <line num="16" count="0" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
       <line num="19" count="1" type="stmt"/>
-      <line num="20" count="0" type="stmt"/>
-      <line num="21" count="0" type="stmt"/>
-      <line num="22" count="0" type="stmt"/>
-      <line num="23" count="0" type="stmt"/>
-      <line num="24" count="0" type="stmt"/>
-      <line num="25" count="0" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="24" count="3" type="stmt"/>
+      <line num="25" count="3" type="stmt"/>
       <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="27" count="0" type="stmt"/>
       <line num="29" count="0" type="stmt"/>
       <line num="31" count="0" type="stmt"/>
-      <line num="33" count="0" type="stmt"/>
-      <line num="34" count="0" type="stmt"/>
-      <line num="35" count="0" type="stmt"/>
-      <line num="36" count="0" type="stmt"/>
+      <line num="33" count="3" type="stmt"/>
+      <line num="34" count="3" type="stmt"/>
+      <line num="35" count="3" type="stmt"/>
+      <line num="36" count="3" type="stmt"/>
       <line num="37" count="0" type="stmt"/>
       <line num="38" count="0" type="stmt"/>
       <line num="39" count="0" type="stmt"/>
@@ -33,18 +33,17 @@
       <line num="41" count="0" type="stmt"/>
       <line num="42" count="0" type="stmt"/>
       <line num="43" count="0" type="stmt"/>
-      <line num="46" count="0" type="stmt"/>
-      <line num="47" count="0" type="stmt"/>
-      <line num="48" count="0" type="stmt"/>
+      <line num="46" count="3" type="stmt"/>
+      <line num="47" count="3" type="stmt"/>
+      <line num="48" count="3" type="stmt"/>
       <line num="50" count="0" type="stmt"/>
       <line num="51" count="0" type="stmt"/>
-      <line num="53" count="0" type="stmt"/>
-      <line num="54" count="0" type="stmt"/>
-      <line num="55" count="0" type="stmt"/>
-      <line num="56" count="0" type="stmt"/>
-      <line num="57" count="0" type="stmt"/>
-      <line num="58" count="0" type="stmt"/>
-      <line num="59" count="0" type="stmt"/>
+      <line num="53" count="3" type="stmt"/>
+      <line num="54" count="3" type="stmt"/>
+      <line num="55" count="3" type="stmt"/>
+      <line num="56" count="3" type="stmt"/>
+      <line num="57" count="3" type="stmt"/>
+      <line num="58" count="3" type="stmt"/>
       <line num="62" count="1" type="stmt"/>
       <line num="63" count="0" type="stmt"/>
       <line num="64" count="0" type="stmt"/>
@@ -62,9 +61,9 @@
       <line num="83" count="0" type="stmt"/>
       <line num="84" count="0" type="stmt"/>
       <line num="88" count="1" type="stmt"/>
-      <line num="89" count="0" type="stmt"/>
-      <line num="90" count="0" type="stmt"/>
-      <line num="91" count="0" type="stmt"/>
+      <line num="89" count="3" type="stmt"/>
+      <line num="90" count="3" type="stmt"/>
+      <line num="91" count="3" type="stmt"/>
     </file>
   </project>
 </coverage>
