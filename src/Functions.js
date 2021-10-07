@@ -56,7 +56,7 @@ const addLi = (ul, index, completed, description) => {
   icon2.className = 'fas fa-trash';
   elBtn.append(icon, icon2);
   task.append(cBox, label, elBtn);
-  // ul.prepend(task);
+  ul.append(task);
 };
 
 const refresh = (ul) => {
