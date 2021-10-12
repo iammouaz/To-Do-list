@@ -4,6 +4,13 @@ import '@fortawesome/fontawesome-free/js/solid.js';
 import './style.css';
 import * as Functions from './Functions.js';
 
+export default function localStorage() {
+  let arrTasks = [];
+  if (JSON.parse(window.localStorage.getItem('tasks'))) {
+    arrTasks = JSON.parse(window.localStorage.getItem('tasks'));
+  }
+  return arrTasks;
+}
 const boxList = document.getElementById('box-list');
 const ul = document.createElement('ul');
 ul.classList.add('item-list');
